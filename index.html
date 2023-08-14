@@ -123,50 +123,77 @@ layout: default
         ✍OEM Part Number: <a href="https://www.marutisuzuki.com/genuine-parts/fuel-filter-assembly/15410m68p00">15410M68P00</a>
 `
         function clearText() {
-          document.getElementById("mileage").value = ""
-          // ⚡⚓✅✍❌❎⭐🔍🔍🔃🛞⚠️
-          document.getElementById("output").innerText = ""
+          document.getElementById("mileage").value = "";
+          // ⚡⚓✅✍❌❎⭐🔍🔍🔃🛞⚠️🔧
+          document.getElementById("output").innerText = "";
         }
 
-        function getRequiredServiceActions() {
-          var mileage = document.getElementById("mileage").value;
+        async function getRequiredServiceActions() {
+          let mileageText = document.getElementById("mileage");
+          let outputText = document.getElementById("output");
+
+          var mileage = mileageText.value;
           if (!mileage || !/^\d+$/.test(mileage)) {
-            document.getElementById("mileage").value = "Wrong Input"
+            mileageText.value = "Wrong Input!";
+            await new Promise(r => setTimeout(r, 300));
+            mileageText.value = "";
             return;
           }
 
           mileage_rounded = mileage - (mileage % 5000);
 
-          var actionsList = ""
-          var inspectionsList = ""
+          var actionsList = "";
+          var inspectionsList = "";
+          var serviceCost = 0;
 
           if (mileage_rounded % 5000 == 0 && mileage_rounded >= 5000) {
             inspectionsList += ServiceActions5Km;
+            serviceCost += 350;
           }
 
           if (mileage_rounded % 10000 == 0) {
             actionsList += ServiceActions10Km;
+            serviceCost += 1850;
           }
           if (mileage_rounded % 20000 == 0) {
             actionsList += ServiceActions20Km;
+            serviceCost += 2500;
           }
           if (mileage_rounded % 30000 == 0) {
             actionsList += ServiceActions30Km;
+            serviceCost += 800;
           }
           if (mileage_rounded % 40000 == 0) {
             actionsList += ServiceActions40Km;
+            serviceCost += 2700;
           }
           if (mileage_rounded % 100000 == 0) {
             actionsList += ServiceActions100Km;
+            serviceCost += 1500;
           }
 
           if (actionsList && inspectionsList) {
-            document.getElementById("output").innerHTML = "<h3><strong>⚓Required Services</strong></h3>    " + actionsList.trimLeft() + "\n<h3><strong>⚓Inspections</strong></h3>    " + inspectionsList.trimLeft()
+            outputText.innerHTML = "<h3><strong>⚓Required Services</strong></h3>    " + actionsList.trimLeft() + "\n<h3><strong>⚓Inspections</strong></h3>    " + inspectionsList.trimLeft();
           } else if (actionsList) {
-            document.getElementById("output").innerHTML = "<h3><strong>⚓Required Services</strong></h3>    " + actionsList.trimLeft()
+            outputText.innerHTML = "<h3><strong>⚓Required Services</strong></h3>    " + actionsList.trimLeft();
           } else if (inspectionsList) {
-            document.getElementById("output").innerHTML = "<h3><strong>⚓Inspections</strong></h3>    " + inspectionsList.trimLeft()
+            outputText.innerHTML = "<h3><strong>⚓Inspections</strong></h3>    " + inspectionsList.trimLeft();
+          }
+
+          if (serviceCost > 0) {
+            outputText.innerHTML += "\n<h3><strong>⚓Service Cost</strong></h3>    <em>Cost displayed below is just an approxiamte\n    For exact costs, Call Suzuki Service Center ...</em>\n    💵" + serviceCost + " EGP";
           }
         }
+
+        // function to detect keypress event
+        document.getElementById("mileage").addEventListener("keypress", function (event) {
+          // detect event key
+          if (event.keyCode == 13) {
+            console.log("Enter key is pressed");
+            let inputText = document.getElementById("mileage").value;
+            console.log(inputText);
+            getRequiredServiceActions();
+          }
+        });
       </script>
 </div>
