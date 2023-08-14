@@ -23,8 +23,8 @@ email: karimalyazzam@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   A webpage to get the required service for Suzuki Dzire and
   Swift (2017-..) accroding to service mileage.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# baseurl: "DzireSwiftMaintenanceSchedule" # the subpath of your site, e.g. /blog
+# url: "https://karim-aly.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: karimazzam07
 github_username:  karim-aly
 
