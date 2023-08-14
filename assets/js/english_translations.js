@@ -9,7 +9,7 @@ let ServiceActions5KmText = `
     🔍Check Suspension for any damage
     🔍Lubricate and tighten Suspension components
     🔍Clean A/C Cabin Air Filter
-    🔍Check Tires Pressure (29 PSI/200KPa)
+    🔍Check Tires Pressure (29 PSI / 200KPa / 2 BAR)
     🔍Check Tires for any crack or cut
     🔍Check Windshield washer fluid level in the tank
     🔍Apply Rubber Protectant to tires and all rubber parts in car
@@ -17,6 +17,7 @@ let ServiceActions5KmText = `
 let ServiceActions10KmText = `
     ✅Replace Engine Oil
         ✍Recomended Specs: Viscosity: <em>0W20</em> API: <em>SP</em>
+        ✍Alternate Specs: Viscosity: <em>5W30</em> API: <em>SN plus / SN</em>
         ✍Amount: <em>3100ml</em> including filter
         ✍Tightening torque for drain plug: <em>35Nm</em>
 
