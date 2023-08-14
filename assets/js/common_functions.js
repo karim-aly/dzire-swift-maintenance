@@ -48,6 +48,10 @@ async function getRequiredServiceActions() {
         actionsList += ServiceActions40KmText;
         serviceCost += 2700;
     }
+    if (mileage_rounded % 60000 == 0) {
+        actionsList += ServiceActions60KmText;
+        serviceCost += 0;
+    }
     if (mileage_rounded % 100000 == 0) {
         actionsList += ServiceActions100KmText;
         serviceCost += 1500;

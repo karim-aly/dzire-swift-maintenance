@@ -8,6 +8,7 @@ let ServiceActions5KmText = `
     🔍Check Actuator fluid tank seal and there's no fluid leak
     🔍Check Suspension for any damage
     🔍Lubricate and tighten Suspension components
+    🔍Clean A/C Cabin Air Filter
     🔍Check Tires Pressure (29 PSI/200KPa)
     🔍Check Tires for any crack or cut
     🔍Check Windshield washer fluid level in the tank
@@ -51,11 +52,19 @@ let ServiceActions40KmText = `
         ✍Amount: <em>1500ml</em>
         ✍Tightening torque for level plug: <em>21Nm</em>
 
+    ✅Replace A/C Cabin Air Filter
+        ✍OEM Part Number: <a href="https://www.marutisuzuki.com/genuine-accessories/cabin-air-filter-pm25/990j0m56rs0-010">990J0M56RS0-010</a>
+
     ✅Replace AC V-Belt
         ✍OEM Part Number: <a href="https://www.marutisuzuki.com/genuine-parts/v-belt-4pk/95141m55r30">95141M55R30</a>
 
     ✅Replace Water Pump Belt
         ✍OEM Part Number: <a href="https://www.marutisuzuki.com/genuine-parts/belt-water-pump/17521m68p00">17521M68P00</a>
+`;
+let ServiceActions60KmText = `
+    ✅Replace Tires
+        ✍Stock Size: R15 185/65
+        ✍Wide Size:  R15 195/60
 `;
 let ServiceActions100KmText = `
     ✅Replace Fuel Filter
@@ -67,4 +76,4 @@ let NoMaintenanceRequiredPromptText = "No Maintenance Required!";
 let RequiredServicesText = "Required Services";
 let InspectionsText = "Inspections";
 let ServiceCostText = "Service Cost";
-let ServiceCostDisclaimerText = "Cost displayed below is just an approxiamte\n    For exact costs, Call Suzuki Service Center ...";
+let ServiceCostDisclaimerText = "Cost displayed below is just an approxiamte\n    For exact costs, Call Suzuki Service Center ...\n    Tires cost is not included in the below number ...";
