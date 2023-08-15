@@ -12,6 +12,7 @@ let ServiceActions5KmText = `
     🔍 فحص ضغط الإطارات (29PSI / 200KPa / 2 BAR)
     🔍 فحص الإطارات بحثًا عن أي صدع أو قطع
     🔍 فحص مستوى سائل غسيل الزجاج الأمامي في الخزان
+    🔍 تنظيف حوض الماتور من الأتربة و الشحوم
     🔍 تطبيق واقي المطاط على الإطارات وجميع الأجزاء المطاطية في السيارة
 `;
 let ServiceActions10KmText = `
@@ -31,17 +32,23 @@ let ServiceActions10KmText = `
 `;
 let ServiceActions20KmText = `
     ✅تغيير شمع الاحتراق (البوجيهات)
-        الموديل الموصي به: NGK LKR6F-10
-        ✍رقم القطعة: <a href="https://www.marutisuzuki.com/genuine-parts/spark-plug/09482m00636">09482M00636</a>
+        ✍الموديل الموصي به: NGK LKR6F-10
+        ✍رقم القطعة: <a href="https://www.marutisuzuki.com/genuine-parts/spark-plug/09482m00636">09482-M-00636</a>
         ✍شد عزم الدوران: <em>18Nm</em>
 
     ✅تغيير فلتر هواء المحرك
-        ✍رقم القطعة: <a href="https://www.marutisuzuki.com/genuine-parts/air-filter/13780m68p01">13780M68P01</a>
+        ✍رقم القطعة: <a href="https://www.marutisuzuki.com/genuine-parts/air-filter/13780m68p01">13780-M-68P01</a>
 `;
 let ServiceActions30KmText = `
     ✅تغيير زيت الفرامل/الدبرياج
         ✍المواصفات الموصي بها: <em>DOT3/DOT4</em>
         ✍الكمية: <em>~500ml</em>
+
+    ✅فحص تيل الفرامل
+        ✍رقم القطعة: <a href="https://www.marutisuzuki.com/genuine-parts/brake-pad-set/55810m55r01">55810-M-55R01</a>
+
+    ✅فحص فرامل اليد و تعديل (رجلشة الذراع)
+        ✍اماكن اسنان سقاطة الفرامل وفقاً للتوصيف: الرابعة-التاسعة
 `;
 let ServiceActions40KmText = `
     ✅تغيير سائل التبريد (الرادياتير)
@@ -50,26 +57,36 @@ let ServiceActions40KmText = `
 
     ✅تغيير زيت ناقل الحركة
         ✍المواصفات الموصي بها: لزوجة <em>75W</em>
+        ✍المواصفات البديلة: لزوجة:   <em>75W80</em>
         ✍الكمية: <em>1500ml</em>
         ✍شد عزم الدوران لسدادة المستوى: <em>21Nm</em>
 
     ✅تغيير فلتر هواء المقصورة (التكييف)
-        ✍رقم القطعة: <a href="https://www.marutisuzuki.com/genuine-accessories/cabin-air-filter-pm25/990j0m56rs0-010">990J0M56RS0-010</a>
+        ✍رقم القطعة: <a href="https://www.marutisuzuki.com/genuine-accessories/cabin-air-filter-new-dzire-new-swift/95850m55r00">95850M55R00</a> / <a href="https://www.marutisuzuki.com/genuine-accessories/cabin-air-filter-pm25/990j0m56rs0-010">990J0M56RS0-010</a>
 
     ✅تغيير سير التكييف
-        ✍رقم القطعة: <a href="https://www.marutisuzuki.com/genuine-parts/v-belt-4pk/95141m55r30">95141M55R30</a>
+        ✍رقم القطعة: <a href="https://www.marutisuzuki.com/genuine-parts/v-belt-4pk/95141m55r30">95141-M-55R30</a>
 
     ✅تغيير سير مضخة المياة(المجموعة)
-        ✍رقم القطعة: <a href="https://www.marutisuzuki.com/genuine-parts/belt-water-pump/17521m68p00">17521M68P00</a>
+        ✍رقم القطعة: <a href="https://www.marutisuzuki.com/genuine-parts/belt-water-pump/17521m68p00">17521-M-68P00</a>
 `
 let ServiceActions60KmText = `
-    ✅تغيير الإطارات
+    ✅فحص/تغيير الإطارات
         ✍المقاس الأصلي: R15 185/65
         ✍المقاس الأعرض: R15 195/60
+
+    ✅فحص طنابير الفرامل الأمامية
+        ✍أقل سمك للطنابير: 18mm
+        ✍رقم القطعة: <a href="https://www.marutisuzuki.com/genuine-parts/front-brake-disc/55311m68p00">55311-M-68P00</a>
+
+    ✅فحص طبل (قباقيب) الفرامل الخلفية
+        ✍أقصي قطر داخلي: 202mm
+        ✍رقم القطعة للديزاير: <a href="https://www.marutisuzuki.com/genuine-parts/drum-brake-rear/43511m68p70">43511-M-68P70</a>
+        ✍رقم القطعة للسويفت: <a href="https://www.marutisuzuki.com/genuine-parts/drumbrake-rear/43511m68p00">43511-M-68P00</a>
 `;
 let ServiceActions100KmText = `
     ✅تغيير فلتر الوقود
-        ✍رقم القطعة: <a href="https://www.marutisuzuki.com/genuine-parts/fuel-filter-assembly/15410m68p00">15410M68P00</a>
+        ✍رقم القطعة: <a href="https://www.marutisuzuki.com/genuine-parts/fuel-filter-assembly/15410m68p00">15410-M-68P00</a>
 `;
 
 let WrongInputPromptText = "قيمة غير صحيحة!";
