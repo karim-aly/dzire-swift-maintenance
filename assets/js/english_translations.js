@@ -1,19 +1,30 @@
 let ServiceActions5KmText = `
-    🔍Check Engine Oil level, color and smell
-    🔍Check Coolant level in the tank
-    🔍Check Brake/Clutch Oil level in the tank
-    🔍Check All Belts for any tears or cracks
-    🔍Check Actuator fluid level in the tank
-        ✍Note: Check after all fluid returns to the tank
-    🔍Check Actuator fluid tank seal and there's no fluid leak
-    🔍Check Suspension for any damage
-    🔍Lubricate and tighten Suspension components
-    🔍Clean A/C Cabin Air Filter
-    🔍Check Tires Pressure (29 PSI / 200KPa / 2 BAR)
-    🔍Check Tires for any crack or cut
-    🔍Check Windshield washer fluid level in the tank
-    🔍Clean Engine Bay from dust and grease
-    🔍Apply Rubber Protectant to tires and all rubber parts in car
+    ✅Engine
+        🔍Check Oil level, color and smell
+        🔍Check Drive Belts for any tears or cracks
+
+    ✅Fluids
+        🔍Check Coolant level in the tank
+        🔍Check Brake/Clutch Oil level
+        🔍Check Windshield washer fluid level
+
+    ✅Suspension
+        🔍Check Suspension for any damage
+        🔍Lubricate and tighten Suspension components
+
+    ✅Actuator
+        🔍Check tank seal for any damage or leak
+        🔍Check Actuator hydraulic fluid level
+            ✍Note: Check after all fluid returns to the tank
+
+    ✅Tires
+        🔍Check Tires Pressure (29 PSI / 200KPa / 2 BAR)
+        🔍Check Tires for any crack or cut
+        
+    ✅Cleaning and Protection
+        🔍Clean Engine Bay from dust and grease
+        🔍Clean A/C Cabin Air Filter
+        🔍Apply Rubber Protectant to tires and all rubber parts
 `;
 let ServiceActions10KmText = `
     ✅Replace Engine Oil
