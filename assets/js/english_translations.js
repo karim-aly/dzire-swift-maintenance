@@ -40,6 +40,7 @@ let ServiceActions10KmText = `
     ✅Rotate Tires
         ✍Rear Tires move to the front diagonally
         ✍Front Tires move to the rear in the same side
+        ✍Check for Tires alignment
 `;
 let ServiceActions20KmText = `
     ✅Replace Spark Plugs
